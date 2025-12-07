@@ -51,6 +51,14 @@ const HeroSection = () => {
               </a>
             </Button>
           </div>
+
+          {/* Disclaimer */}
+          <p 
+            className="mt-4 text-xs leading-relaxed text-muted-foreground opacity-0 animate-fade-in"
+            style={{ animationDelay: "0.5s" }}
+          >
+            Rewards depend on completing qualifying deals exactly as instructed. If deals are incomplete, invalid, or not properly finished, no reward will be issued. Results vary.
+          </p>
         </div>
       </div>
     </section>
