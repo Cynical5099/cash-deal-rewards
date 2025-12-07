@@ -1,36 +1,33 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-dollar-cycle.png";
+import { ArrowRight, DollarSign } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-teal-light to-background">
-      <div className="container px-6 py-12 md:py-20">
-        <div className="mx-auto max-w-lg text-center">
-          {/* Hero Image */}
-          <div className="mb-8 flex justify-center animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <img
-              src={heroImage}
-              alt="Dollar sign with arrows representing cash flow cycle"
-              className="h-48 w-auto object-contain md:h-64 drop-shadow-lg"
-            />
+    <section className="relative overflow-hidden bg-gradient-to-b from-money-green-light to-background">
+      <div className="container px-5 py-10 sm:py-16">
+        <div className="mx-auto max-w-md text-center">
+          {/* Icon */}
+          <div className="mb-6 flex justify-center animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 ring-4 ring-primary/20">
+              <DollarSign className="h-10 w-10 text-primary" strokeWidth={2.5} />
+            </div>
           </div>
 
           {/* Headline */}
           <h1 
-            className="mb-4 font-display text-3xl font-bold leading-tight tracking-tight text-foreground opacity-0 animate-fade-in md:text-4xl lg:text-5xl"
+            className="mb-4 font-display text-2xl font-bold leading-tight tracking-tight text-foreground opacity-0 animate-fade-in sm:text-3xl"
             style={{ animationDelay: "0.2s" }}
           >
-            Turn Small Tasks Into Real Cash —{" "}
-            <span className="text-primary">Earn Up to $750</span>
+            Turn Small Tasks Into{" "}
+            <span className="text-primary">Real Cash</span>
           </h1>
 
           {/* Subheadline */}
           <p 
-            className="mb-8 text-lg text-muted-foreground opacity-0 animate-fade-in md:text-xl"
+            className="mb-8 text-base text-muted-foreground opacity-0 animate-fade-in sm:text-lg"
             style={{ animationDelay: "0.3s" }}
           >
-            Complete quick deals & surveys — the more you finish, the bigger your payout.
+            Complete quick deals and surveys. The more you finish, the bigger your payout.
           </p>
 
           {/* CTA Button */}
@@ -56,9 +53,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Decorative gradient overlay */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 };
