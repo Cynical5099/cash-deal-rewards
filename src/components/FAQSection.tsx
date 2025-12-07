@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "How long until I get paid?",
-    answer: "2–4 business days after all deals are verified.",
+    answer: "2 to 4 business days after all deals are verified.",
   },
   {
     question: "What happens if I don't finish enough deals?",
@@ -18,21 +18,21 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section className="bg-secondary py-12 md:py-16">
-      <div className="container px-6">
-        <div className="mx-auto max-w-lg">
-          <h2 className="mb-8 text-center font-display text-2xl font-bold text-foreground">
+    <section className="bg-secondary py-10 sm:py-12">
+      <div className="container px-5">
+        <div className="mx-auto max-w-md">
+          <h2 className="mb-6 text-center font-display text-xl font-bold text-foreground sm:text-2xl">
             Frequently Asked Questions
           </h2>
 
-          <Accordion type="single" collapsible className="space-y-3">
+          <Accordion type="single" collapsible className="space-y-2">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="rounded-xl border-none bg-card px-5 shadow-soft"
+                className="rounded-xl border-none bg-card px-4 shadow-soft"
               >
-                <AccordionTrigger className="py-4 text-left font-display text-base font-semibold text-foreground hover:no-underline [&[data-state=open]>svg]:text-primary">
+                <AccordionTrigger className="py-4 text-left font-display text-sm font-semibold text-foreground hover:no-underline sm:text-base [&[data-state=open]>svg]:text-primary">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="pb-4 text-sm leading-relaxed text-muted-foreground">
