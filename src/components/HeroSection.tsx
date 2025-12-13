@@ -7,27 +7,26 @@ const HeroSection = () => {
       <div className="container px-5 py-10 sm:py-16">
         <div className="mx-auto max-w-md text-center">
           {/* Icon */}
-          <div className="mb-6 flex justify-center animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 ring-4 ring-primary/20">
-              <DollarSign className="h-10 w-10 text-primary" strokeWidth={2.5} />
+          <div className="mb-5 flex justify-center animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+              <DollarSign className="h-8 w-8 text-primary" strokeWidth={2} />
             </div>
           </div>
 
           {/* Headline */}
           <h1 
-            className="mb-4 font-display text-2xl font-bold leading-tight tracking-tight text-foreground opacity-0 animate-fade-in sm:text-3xl"
+            className="mb-3 font-display text-xl font-semibold leading-tight tracking-tight text-foreground opacity-0 animate-fade-in sm:text-2xl"
             style={{ animationDelay: "0.2s" }}
           >
-            Turn Small Tasks Into{" "}
-            <span className="text-primary">Real Cash</span>
+            A Simple Way to Earn Extra Cash
           </h1>
 
           {/* Subheadline */}
           <p 
-            className="mb-8 text-base text-muted-foreground opacity-0 animate-fade-in sm:text-lg"
+            className="mb-6 text-sm text-muted-foreground opacity-0 animate-fade-in sm:text-base"
             style={{ animationDelay: "0.3s" }}
           >
-            Complete quick deals and surveys. The more you finish, the bigger your payout.
+            Complete partner offers and surveys at your own pace. Payouts depend on how many you finish correctly.
           </p>
 
           {/* CTA Button */}
@@ -52,12 +51,12 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Disclaimer */}
+          {/* Expectation Setting */}
           <p 
-            className="mt-4 text-xs leading-relaxed text-muted-foreground opacity-0 animate-fade-in"
+            className="mt-4 text-xs leading-relaxed text-muted-foreground/80 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.5s" }}
           >
-            Rewards depend on completing qualifying deals exactly as instructed. If deals are incomplete, invalid, or not properly finished, no reward will be issued. Results vary.
+            Your earnings depend on completing partner offers correctly. Each offer has specific requirements. Incomplete or invalid submissions won't qualify. Most people use this for groceries, bills, or a little extra spending money.
           </p>
         </div>
       </div>
